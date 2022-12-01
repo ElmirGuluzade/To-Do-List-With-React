@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: rgb(240, 242, 255);
+  background: linear-gradient(90deg, rgba(240, 242, 255, 1) 1%, rgba(113, 202, 255, 1) 47%);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.Input h2 {
+  margin: 20px 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.filterTask {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 20px;
+}
+
+.filterTask select {
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.Input input {
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.inputText {
+  position: relative;
+
+}
+
+.inputText i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 40px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+}
+
+.Tasks {
+  margin: 20px 0;
+}
+
+.Tasks ul {
+  width: 400px;
+  list-style-type: none;
+  height: 280px;
+  overflow-y: scroll;
+}
+
+.Tasks ul::-webkit-scrollbar {
+  display: none;
+}
+
+.Tasks ul li {
+  background-color: rgb(244, 255, 251);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.task {
+  position: relative;
+}
+
+.task i {
+  position: absolute;
+  height: 40px;
+  cursor: pointer;
+}
+
+.task i:first-child {
+  color: red;
+  right: 25px;
+  margin-right: 10px;
+}
+
+.task i:last-child {
+  right: 10px;
+  color: green;
+  font-weight: 1000;
+}
